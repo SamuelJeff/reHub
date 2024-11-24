@@ -2,15 +2,7 @@ import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 import {
   IonContent,
-  IonPage,
-  IonHeader,
-  IonToolbar,
-  IonTitle,
-  IonInput,
-  IonLabel,
-  IonButton,
-  IonItem,
-  IonText,
+  IonPage
 } from "@ionic/react";
 import "./LoginR.css";
 
