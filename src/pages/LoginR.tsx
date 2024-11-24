@@ -23,7 +23,7 @@ const LoginR: React.FC = () => {
       const response = await fakeBackendLogin(email, password); // Chamada ao backend
       if (response.success) {
         // Redireciona para a próxima página se o login for bem-sucedido
-        history.push('/HomeR'); // Substitua '/HomeR' pelo caminho da sua próxima tela
+        history.push('/homeR'); // Substitua '/HomeR' pelo caminho da sua próxima tela
       } else {
         alert("Login falhou: " + response.message);
       }
@@ -59,7 +59,7 @@ const LoginR: React.FC = () => {
 
           <div className="container">
           <div className="logo-container">
-              <img src="../public/minden.svg" alt="Logo Icon" className="logo" />
+              <img src="../public/minden.svg" alt="Logo Icon" className="logoMinden" />
             </div>
             <h2>Login</h2>
             <form
