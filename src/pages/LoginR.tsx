@@ -38,7 +38,7 @@ const LoginR: React.FC = () => {
     return new Promise<{ success: boolean; message?: string }>((resolve) => {
       setTimeout(() => {
         // Simulando um login bem-sucedido
-        if (email === "samueljefferson143@gmail.com" && password === "1234") {
+        if (email === "teste@123" && password === "123") {
           resolve({ success: true });
         } else {
           resolve({ success: false, message: "Credenciais inválidas." });
@@ -59,7 +59,7 @@ const LoginR: React.FC = () => {
 
           <div className="container">
           <div className="logo-container">
-              <img src="../public/logo.png" alt="Logo Icon" className="logo" />
+              <img src="../public/minden.svg" alt="Logo Icon" className="logo" />
             </div>
             <h2>Login</h2>
             <form

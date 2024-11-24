@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    color:black;
+    background-color: #ffffff;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+.containerR{
+    margin:0;
+    padding:0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.exit-placeholder{
+    background-color: #FF7B7B;
+    width: 60px;
+    height: 20px;
+    border-radius: 20px;
+}
+
+.header {
+    padding: 16px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+}
+
+.brand {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.page-title {
+    margin: 20px 16px;
+    font-size: 18px;
+}
+
+.menu-icons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    gap: 24px;
+    padding: 16px;
+    background-color: white;
+    margin-bottom: 24px;
+}
+
+.icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 8px;
+    padding-top: 8px;
+    background-color: gray;
+}
+
+.icon-placeholder {
+    width: 48px;
+    height: 48px;
+    background-color: #ddd;
+    border-radius: 12px;
+}
+
+.icon-label {
+    font-size: 12px;
+    text-align: center;
+}
+
+.next-session {
+    margin: 0 16px;
+}
+
+.session-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.details-button {
+    padding: 4px 8px;
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    font-size: 14px;
+    background: white;
+}
+
+.image-container {
+    width: 100%;
+    height: 250px;
+    background-color: #ddd;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.session-info {
+    font-size: 14px;
+    margin-bottom: 12px;
+    width: 100%;
+}
+
+.map-button {
+    background-color: #83FFBA;
+    color: black;
+    padding: 12px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 24px;
+}
+.next-session {
+    margin: 0 16px;
+    width: 90%; /* Aumenta a largura do bloco */
+    max-width: 600px; /* Define uma largura máxima */
+    padding: 16px; /* Adiciona padding para dar mais espaço interno */
+    background-color: #f9f9f9; /* Adiciona uma cor de fundo para visualização */
+    border-radius: 8px; /* Arredonda os cantos */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra para destaque */
+}
+
+.add-activity {
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
