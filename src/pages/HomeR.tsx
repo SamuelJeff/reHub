@@ -7,7 +7,9 @@ const HomeR: React.FC = () => {
       <div className="containerR">
         <div className="header">
           <button className="exit-placeholder">Sair</button>
-          <img src="../public/minden.svg" alt="Logo Icon" className="logo"/>
+          <div className="logo-containerR">
+              <img src="../public/minden.svg" alt="Logo Icon" className="logoMinden" />
+            </div>
           <h2 className="page-title">Página inicial</h2>
         </div>
 
@@ -15,13 +17,17 @@ const HomeR: React.FC = () => {
 
         <div className="menu-icons">
           <div className="icon-item">
-            <div className="icon-placeholder"></div>
+            <div className="icon-placeholder">
+            <img src="../public/calendar-clock.svg" alt="Logo Icon" className="logo" />
+            </div>
             <span className="icon-label">
               Calendário<br></br>de atividades
             </span>
           </div>
           <div className="icon-item">
-            <div className="icon-placeholder"></div>
+            <div className="icon-placeholder">
+            <img src="../public/time-past.svg" alt="Logo Icon" className="logo" />
+            </div>
             <span className="icon-label">
               Histórico de<br></br>Atividades
             </span>

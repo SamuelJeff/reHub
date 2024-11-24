@@ -37,6 +37,10 @@ body {
     background-color: #ffffff;
 }
 
+.logoMinden{
+    padding-top: 10px;
+}
+
 .brand {
     font-size: 20px;
     font-weight: bold;
@@ -64,14 +68,22 @@ body {
     justify-content: space-around;
     gap: 8px;
     padding-top: 8px;
-    background-color: gray;
 }
 
 .icon-placeholder {
-    width: 48px;
-    height: 48px;
-    background-color: #ddd;
-    border-radius: 12px;
+    width: 60px;
+    height: 60px;
+    background-color: #ebebeb;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
 }
 
 .icon-label {
