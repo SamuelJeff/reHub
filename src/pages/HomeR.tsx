@@ -21,7 +21,7 @@ const HomeR: React.FC = () => {
   return (
     <IonPage>
       <div className="containerR">
-        <div className="header">
+        <div className="headerR">
           <button className="exit-placeholder" onClick={handleExitClick}>Sair</button>
           <div className="logo-containerR">
             <img
