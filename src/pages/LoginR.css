@@ -7,7 +7,7 @@
   z-index: 1; /* Conteúdo principal acima dos círculos */
 }
 
-.container {
+.containerL {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -15,7 +15,7 @@
   width: 100%;
   height: 90%;
   position: relative;
-  z-index: 3; /* Conteúdo acima dos círculos */
+  z-index: -1; /* Conteúdo acima dos círculos */
 }
 
 .test {

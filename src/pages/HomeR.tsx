@@ -22,7 +22,11 @@ const HomeR: React.FC = () => {
     <IonPage>
       <div className="containerR">
         <div className="headerR">
-          <button className="exit-placeholder" onClick={handleExitClick}>Sair</button>
+          <button className="exit-placeholder" onClick={handleExitClick}><img
+              src="../public/exit-alt.svg"
+              alt="Logo Icon"
+              className="logoExit"
+            />Sair</button>
           <div className="logo-containerR">
             <img
               src="../public/minden.svg"

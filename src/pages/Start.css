@@ -54,14 +54,14 @@
     z-index: 1;
   }
   /* Container principal */
-  .container {
+  .containerS {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100%;
     position: relative;
-    z-index: 3; /* Conteúdo acima dos círculos */
+    z-index: -1; /* Conteúdo acima dos círculos */
   }
   
   /* Estilização do logo */
@@ -71,7 +71,7 @@
     align-items: center;
     margin-bottom: 40px;
   }
-  .logo-icon{
+  .logoMinden{
     padding-bottom: 40px;
   }
   

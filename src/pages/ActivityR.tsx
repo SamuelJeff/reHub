@@ -1,62 +1,35 @@
 import { IonPage } from "@ionic/react";
 import "./ActivityR.css";
+import Activity from "../components/Activity"
 
 const ActivityR: React.FC = () => {
   return (
     <IonPage>
       <header className="header">
         <div className="header-left">
-            <div className="back-button"></div>
-            <span className="header-title">Atividades disponíveis</span>
+            <button className="back-button"><img
+              src="../public/angle-left.svg"
+              alt="Logo Icon"
+              className="back"
+            /></button>
+           
         </div>
+        <span className="header-title">Atividades disponíveis</span>
         <div className="header-menu"></div>
     </header>
 
     <div className="activity-list">
-        <div className="activity-item">
-            <div className="activity-image"></div>
-            <div className="activity-info">
-                <div className="activity-title">Centro de Referência em Atendimento...</div>
-                <div className="activity-subtitle">Atividade: Grupo de apoio e reeducação</div>
-            </div>
-        </div>
 
-        <div className="activity-item">
-            <div className="activity-image"></div>
-            <div className="activity-info">
-                <div className="activity-title">Instituto Maria da Penha</div>
-                <div className="activity-subtitle">Atividade: Curso de reeducação</div>
-            </div>
-        </div>
-
-        <div className="activity-item">
-            <div className="activity-image"></div>
-            <div className="activity-info">
-                <div className="activity-title">Patrulha Maria da Penha</div>
-                <div className="activity-subtitle">Atividade: Acompanhamento psicológico</div>
-            </div>
-        </div>
-
-        <div className="activity-item">
-            <div className="activity-image"></div>
-            <div className="activity-info">
-                <div className="activity-title">Centro de Referência Clarice Lispector</div>
-                <div className="activity-subtitle">Atividade: Oficinas de conscientização</div>
-            </div>
-        </div>
-
-        <div className="activity-item">
-            <div className="activity-image"></div>
-            <div className="activity-info">
-                <div className="activity-title">Programa Homens de Palavra</div>
-                <div className="activity-subtitle">Atividade: Grupo de reflexão</div>
-            </div>
-        </div>
-    </div>
-
-    <div className="see-more-button">
+        <Activity name="instituição 1" activity="Grupo de apoio e reeducação"></Activity>
+        <Activity name="instituição 2" activity="Curso de reeducação"></Activity>
+        <Activity name="instituição 3" activity="Acompanhamento psicológico"></Activity>
+        <Activity name="instituição 4" activity="Oficinas de conscientização"></Activity>
+        <Activity name="instituição 5" activity="Atividade: Grupo de reflexão"></Activity>
+</div>
+    <button className="see-more-button">
         Ver Mais
-    </div>
+    </button>
+    <div></div>
     </IonPage>
   );
 };

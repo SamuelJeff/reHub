@@ -24,7 +24,7 @@ const Start: React.FC = () => {
           <div className="circle circle-bottom"></div>
           <div className="circle circle-bottom-small"></div>
           {/* Conteúdo principal */}
-          <div className="container">
+          <div className="containerS">
             <div className="logo-container">
               <img src="../public/minden.svg" alt="Logo Icon" className="logoMinden" />
             </div>

@@ -3,10 +3,12 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
+    color: black;
 }
 
 .header {
     padding: 16px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -16,13 +18,16 @@
 .header-left {
     display: flex;
     align-items: center;
-    gap: 12px;
 }
 
 .back-button {
-    width: 24px;
+    width: 30px;
     height: 24px;
-    background-color: #f0f0f0;
+    background-color: #fffafa;
+}
+.back{
+height: 75%;
+mix-blend-mode: multiply;
 }
 
 .header-title {
@@ -42,42 +47,12 @@
     gap: 16px;
 }
 
-.activity-item {
-    display: flex;
-    gap: 16px;
-    align-items: center;
-    padding: 8px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-}
 
-.activity-image {
-    width: 60px;
-    height: 60px;
-    background-color: #ddd;
-    border-radius: 8px;
-    flex-shrink: 0;
-}
-
-.activity-info {
-    flex-grow: 1;
-}
-
-.activity-title {
-    font-size: 14px;
-    margin-bottom: 4px;
-}
-
-.activity-subtitle {
-    font-size: 12px;
-    color: #666;
-}
 
 .see-more-button {
     margin: 16px;
     padding: 12px;
-    background-color: #e0ffe0;
+    background-color: #83FFBA;
     border-radius: 8px;
     text-align: center;
     font-size: 14px;

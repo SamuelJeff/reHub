@@ -57,7 +57,7 @@ const LoginR: React.FC = () => {
           <div className="circle circle-4-bottom-small"></div>
           <div className="circle circle-5-bottom-medium"></div>
 
-          <div className="container">
+          <div className="containerL">
           <div className="logo-container">
               <img src="../public/minden.svg" alt="Logo Icon" className="logoMinden" />
             </div>

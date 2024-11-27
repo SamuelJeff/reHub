@@ -25,7 +25,7 @@ body {
 .exit-placeholder{
     background-color: #FF7B7B;
     width: 60px;
-    height: 20px;
+    height: 40px;
     border-radius: 20px;
 }
 
@@ -39,6 +39,7 @@ body {
 
 .logoMinden{
     padding-top: 10px;
+    mix-blend-mode: multiply
 }
 
 .brand {
@@ -84,6 +85,7 @@ body {
     width: 42px;
     height: 42px;
     border-radius: 10px;
+    mix-blend-mode: multiply;
 }
 
 .icon-label {
@@ -152,4 +154,10 @@ body {
     margin-bottom: 24px;
     background-color: #83FFBA;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.logoExit{
+    width: 15px;
+    height: 15px;
+    mix-blend-mode: multiply;
 }
