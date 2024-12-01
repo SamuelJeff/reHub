@@ -1,30 +1,34 @@
 import { IonContent, IonPage } from '@ionic/react'
 import './HistoryR.css'
+import { useHistory } from 'react-router-dom';
+import ActivityHistory from '../components/ActivityHistory';
 
 const HistoryR: React.FC = () => {
+    const history = useHistory();
+
+    const handleBackHomeR = () => {
+        history.push('/homeR');
+    }
     return (
         <IonPage>
             <IonContent fullscreen>
                 <div className='containerH'>
                 <div className="headerH">
-            <div className="back-button-placeholder"></div>
-            <h1>Histórico de Atividades</h1>
-            <div className="menu-button-placeholder"></div>
-        </div>
+      
+            <button className="back-button" onClick={handleBackHomeR}>
+              <img
+                src="../public/angle-left.svg"
+                alt="Logo Icon"
+                className="back"
+              />
+            </button>
+            <span className="header-title">Histórico de Atividades</span>
+          </div>
 
         <h2 className="title">Atividade</h2>
 
         <ul className="activity-list">
-            <li className="activity-item">
-                <div className="activity-info">
-                    <div className="calendar-icon-placeholder"></div>
-                    <div className="activity-details">
-                        <span className="activity-name">Grupo de apoio e reeducação</span>
-                        <span className="activity-date">15/09/2024</span>
-                    </div>
-                </div>
-                <span className="activity-status status-progress">Em andamento</span>
-            </li>
+           <ActivityHistory name={'teste'} date={'teste'}></ActivityHistory>
 
             <li className="activity-item">
                 <div className="activity-info">
@@ -37,6 +41,7 @@ const HistoryR: React.FC = () => {
                 <span className="activity-status status-completed">Concluída</span>
             </li>
         </ul>
+              
                 </div>
             </IonContent>
         </IonPage>

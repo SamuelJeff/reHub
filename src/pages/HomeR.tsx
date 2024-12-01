@@ -6,7 +6,7 @@ const HomeR: React.FC = () => {
   const history = useHistory(); // Criando a instância de history
 
     // Funções para redirecionar
-    const handleAddActivityClick = () => {
+    const handleActivityClick = () => {
         history.push('/activityR'); // Substitua '/add-activity' pelo caminho da sua próxima tela
     };
 
@@ -16,6 +16,9 @@ const HomeR: React.FC = () => {
 
     const handleDetailsClick = () => {
         history.push('/detailAct'); // Substitua '/details' pelo caminho da sua próxima tela
+    };
+    const handleHistoryClick = () => {
+        history.push('/historyR'); // Substitua '/details' pelo caminho da sua próxima tela
     };
 
   return (
@@ -39,7 +42,7 @@ const HomeR: React.FC = () => {
         </div>
 <h1 className="page-title">Bem vindo!</h1>
         <div className="menu-icons">
-          <div className="icon-item">
+          <div className="icon-item" onClick={handleActivityClick}>
             <div className="icon-placeholder">
               <img
                 src="../public/calendar-clock.svg"
@@ -51,7 +54,7 @@ const HomeR: React.FC = () => {
               Calendário<br></br>de atividades
             </span>
           </div>
-          <div className="icon-item">
+          <div className="icon-item" onClick={handleHistoryClick}>
             <div className="icon-placeholder">
               <img
                 src="../public/time-past.svg"
@@ -86,7 +89,6 @@ const HomeR: React.FC = () => {
         >
           Ver no mapa
         </button>
-        <button className="add-activity" onClick={handleAddActivityClick}>Adicionar atividade</button>
         </div>
       </div>
       </IonContent>

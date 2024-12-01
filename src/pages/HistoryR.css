@@ -1,95 +1,95 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
 body {
-    background-color: white;
+  background-color: white;
 }
 
-.container {
-    max-width: 600px;
-    margin: 0 auto;
-    min-height: 100vh;
+.containerH {
+  margin: 0 auto;
+  height: 100%;
 }
 
-.header {
-    padding: 16px;
-    border-bottom: 1px solid #eee;
-    display: flex;
+.headerH {
+  padding: 16px;
+  border-bottom: 1px solid #eee;
+  display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
 }
 
 .back-button-placeholder {
-    width: 24px;
-    height: 24px;
-    background: #eee;
+  width: 24px;
+  height: 24px;
+  background: #eee;
 }
 
 .menu-button-placeholder {
-    width: 24px;
-    height: 24px;
-    background: #eee;
+  width: 24px;
+  height: 24px;
+  background: #eee;
 }
 
 .title {
-    font-size: 16px;
-    margin: 20px;
-    color: #333;
+  font-size: 16px;
+  margin: 20px;
+  color: #333;
 }
 
 .activity-list {
-    list-style: none;
+  list-style: none;
 }
 
 .activity-item {
-    padding: 16px 20px;
-    border-bottom: 1px solid #eee;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  padding: 16px 20px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .activity-info {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .calendar-icon-placeholder {
-    width: 24px;
-    height: 24px;
-    background: #eee;
-    margin-right: 12px;
+  width: 24px;
+  height: 24px;
+  background: #eee;
+  margin-right: 12px;
 }
 
 .activity-details {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .activity-name {
-    font-size: 16px;
-    color: #333;
-    margin-bottom: 4px;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 4px;
 }
 
 .activity-date {
-    font-size: 14px;
-    color: #666;
+  font-size: 14px;
+  color: #666;
 }
 
 .activity-status {
-    font-size: 14px;
-    color: #666;
+  font-size: 14px;
+  color: #666;
 }
 
 .status-progress {
-    color: #007AFF;
+  color: #007aff;
 }
 
 .status-completed {
-    color: #34C759;
+  color: #34c759;
 }
