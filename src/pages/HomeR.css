@@ -11,6 +11,10 @@ body {
     background-color: #ffffff;
 }
 
+IonContent{
+    --background: #ffffff;
+}
+
 .containerR{
     margin:0;
     padding:0;
@@ -33,7 +37,7 @@ body {
     padding: 16px;
     width: 100%;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     background-color: #ffffff;
 }
 
@@ -160,4 +164,11 @@ body {
     width: 15px;
     height: 15px;
     mix-blend-mode: multiply;
+}
+
+.buttonGroupH{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

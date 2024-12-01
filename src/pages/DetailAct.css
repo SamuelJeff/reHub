@@ -3,15 +3,20 @@
     margin: 0 auto;
     background: white;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.header {
+.headerD {
     padding: 16px;
     border-bottom: 1px solid #eee;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
 }
+
 
 .back-button-placeholder {
     width: 24px;
@@ -85,17 +90,15 @@
 }
 
 .apply-button {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 16px;
-    background: #33d69f;
-    color: white;
-    border: none;
-    font-size: 16px;
-    cursor: pointer;
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
+    background-color: #83ffba; 
+  color: #000;
+  border: none; 
+  border-radius: 30px; 
+  padding: 20px; 
+  cursor: pointer;
+  width: 50%; 
+}
+
+.space{
+    margin: 20px;
 }

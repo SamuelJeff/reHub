@@ -3,18 +3,26 @@ import { useHistory } from 'react-router-dom';
 import "./DetailAct.css";
 
 const DetailAct: React.FC = () => {
- 
+  const history = useHistory(); // Criando a instância de history
+
+  const handleBackHomeR = () =>{
+    history.push('/homeR');
+  }
   return (
     <IonPage>
         <IonContent fullscreen>
-          <div className="container">
-        <header className="header">
-            <div className="back-button-placeholder"></div>
+          <div className="containerDet">
+        <div className="headerD">
+            <div className="back-button-placeholder"><button className="back-button" onClick={handleBackHomeR}><img
+              src="../public/angle-left.svg"
+              alt="Logo Icon"
+              className="back"
+            /></button></div>
             <h1>Atividade</h1>
             <span className="page-counter">0/2</span>
-        </header>
+        </div>
 
-        <main className="contentDet">
+        <div className="contentDet">
             <div className="logo-placeholder"></div>
             
             <h2 className="title">Grupo de apoio e reeducação</h2>
@@ -25,7 +33,11 @@ const DetailAct: React.FC = () => {
             </p>
 
             <div className="duration">
-                <div className="duration-icon-placeholder"></div>
+                <div className="duration-icon-placeholder"><img
+                src="../public/calendar-clock.svg"
+                alt="Logo Icon"
+                className="logoD"
+              /></div>
                 <span>Tempo de duração: 2 semanas</span>
             </div>
 
@@ -37,8 +49,9 @@ const DetailAct: React.FC = () => {
                 <li className="activity-item">Como construir relacionamentos saudáveis</li>
                 <li className="activity-item">Desenvolver habilidades emocionais</li>
             </ul>
-        </main>
+        </div>
         <button className="apply-button">Aplicar</button>
+        <div className="space"></div>
     </div>
     </IonContent>
   </IonPage>

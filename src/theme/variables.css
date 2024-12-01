@@ -4,4 +4,9 @@ http://ionicframework.com/docs/theming/ */
 :root {
     --ion-color-success: #34d399; /* Define o verde dos botões */
   }
-  
+  body{
+    background-color: #ffffff;
+  }
+  IonApp, IonRouterOutlet {
+    height: 100%;
+}

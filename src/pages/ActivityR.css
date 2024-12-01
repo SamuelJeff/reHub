@@ -4,6 +4,13 @@
     box-sizing: border-box;
     font-family: Arial, sans-serif;
     color: black;
+    background-color: white;
+}
+
+.containerA{
+    display: flex;
+    flex-direction: column;
+ height: 100%;
 }
 
 .header {

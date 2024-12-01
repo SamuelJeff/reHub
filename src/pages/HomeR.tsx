@@ -15,7 +15,7 @@ const HomeR: React.FC = () => {
     };
 
     const handleDetailsClick = () => {
-        history.push('/details'); // Substitua '/details' pelo caminho da sua próxima tela
+        history.push('/detailAct'); // Substitua '/details' pelo caminho da sua próxima tela
     };
 
   return (
@@ -35,9 +35,9 @@ const HomeR: React.FC = () => {
               className="logoMinden"
             />
           </div>
-          <h2 className="page-title">Página inicial</h2>
+          
         </div>
-
+<h2 className="page-title">Página inicial</h2>
         <div className="menu-icons">
           <div className="icon-item">
             <div className="icon-placeholder">
@@ -71,14 +71,15 @@ const HomeR: React.FC = () => {
             <button className="details-button" onClick={handleDetailsClick}>Detalhes</button>
           </div>
 
-          <div className="image-container">Imagem</div>
+          <div className="image-container" onClick={handleDetailsClick}>Imagem</div>
 
-          <div className="session-info">
+          <div className="session-info" onClick={handleDetailsClick}>
             <strong>Grupo de apoio e reeducação</strong>
             <br></br>
             Data: 10/10/2024 - 14:00
           </div>
         </div>
+        <div className="buttonGroupH">
         <button
           className="map-button"
           onClick={() => window.open("https://www.google.com/maps", "_blank")}
@@ -86,6 +87,7 @@ const HomeR: React.FC = () => {
           Ver no mapa
         </button>
         <button className="add-activity" onClick={handleAddActivityClick}>Adicionar atividade</button>
+        </div>
       </div>
       </IonContent>
     </IonPage>
