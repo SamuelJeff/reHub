@@ -14,7 +14,8 @@ import Start from "./pages/Start";
 import LoginR from "./pages/LoginR";
 import HomeR from "./pages/HomeR";
 import ActivityR from "./pages/ActivityR";
-import DetailAct from "./pages/DetailAct"
+import DetailAct from "./pages/DetailAct";
+import HistoryR from "./pages/HistoryR";
 
 /* Core CSS required for Ionic components to work properly */
 import "@ionic/react/css/core.css";
@@ -69,6 +70,9 @@ const App: React.FC = () => (
         </Route>
         <Route exact path="/detailAct">
         <DetailAct />
+        </Route>
+        <Route exact path="/historyR">
+        <HistoryR />
         </Route>
       </IonRouterOutlet>
     </IonReactRouter>

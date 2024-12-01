@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: white;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+.header {
+    padding: 16px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.back-button-placeholder {
+    width: 24px;
+    height: 24px;
+    background: #eee;
+}
+
+.menu-button-placeholder {
+    width: 24px;
+    height: 24px;
+    background: #eee;
+}
+
+.title {
+    font-size: 16px;
+    margin: 20px;
+    color: #333;
+}
+
+.activity-list {
+    list-style: none;
+}
+
+.activity-item {
+    padding: 16px 20px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.activity-info {
+    display: flex;
+    align-items: center;
+}
+
+.calendar-icon-placeholder {
+    width: 24px;
+    height: 24px;
+    background: #eee;
+    margin-right: 12px;
+}
+
+.activity-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.activity-name {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 4px;
+}
+
+.activity-date {
+    font-size: 14px;
+    color: #666;
+}
+
+.activity-status {
+    font-size: 14px;
+    color: #666;
+}
+
+.status-progress {
+    color: #007AFF;
+}
+
+.status-completed {
+    color: #34C759;
+}

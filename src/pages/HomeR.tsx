@@ -23,7 +23,7 @@ const HomeR: React.FC = () => {
       <IonContent fullscreen>
       <div className="containerR">
         <div className="headerR">
-          <button className="exit-placeholder" onClick={handleExitClick}><img
+          <button className="exitButton" onClick={handleExitClick}><img
               src="../public/exit-alt.svg"
               alt="Logo Icon"
               className="logoExit"
@@ -37,7 +37,7 @@ const HomeR: React.FC = () => {
           </div>
           
         </div>
-<h2 className="page-title">Página inicial</h2>
+<h1 className="page-title">Bem vindo!</h1>
         <div className="menu-icons">
           <div className="icon-item">
             <div className="icon-placeholder">

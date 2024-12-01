@@ -54,7 +54,7 @@ const ActivityR: React.FC = () => {
             activity="Atividade: Grupo de reflexão"
           ></Activity>
         </div>
-        <button className="see-more-button">Ver Mais</button>
+        {/* <button className="see-more-button">Ver Mais</button> */}
         <div></div>
         </div>
       </IonContent>

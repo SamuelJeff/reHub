@@ -42,3 +42,4 @@ const HistoryR: React.FC = () => {
         </IonPage>
     )
 }
+export default HistoryR;
