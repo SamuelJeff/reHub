@@ -48,7 +48,7 @@ const LoginR: React.FC = () => {
   };
   return (
     <IonPage>
-      <IonContent>
+      <IonContent fullscreen>
         <div className="background">
           {/* Círculos decorativos */}
           <div className="circle circle-1-top-small"></div>
@@ -93,7 +93,7 @@ const LoginR: React.FC = () => {
                 Login
               </button>
             </form>
-              <p>Esqueci minha senha</p>
+              <p className="textBlue">Esqueci minha senha</p>
           </div>
         </div>
       </IonContent>

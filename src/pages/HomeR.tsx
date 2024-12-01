@@ -1,4 +1,4 @@
-import { IonPage } from "@ionic/react";
+import { IonContent, IonPage } from "@ionic/react";
 import { useHistory } from 'react-router-dom';
 import "./HomeR.css";
 
@@ -20,6 +20,7 @@ const HomeR: React.FC = () => {
 
   return (
     <IonPage>
+      <IonContent fullscreen>
       <div className="containerR">
         <div className="headerR">
           <button className="exit-placeholder" onClick={handleExitClick}><img
@@ -86,6 +87,7 @@ const HomeR: React.FC = () => {
         </button>
         <button className="add-activity" onClick={handleAddActivityClick}>Adicionar atividade</button>
       </div>
+      </IonContent>
     </IonPage>
   );
 };

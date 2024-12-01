@@ -1,10 +1,11 @@
-import { IonPage } from "@ionic/react";
+import { IonContent, IonPage } from "@ionic/react";
 import "./ActivityR.css";
 import Activity from "../components/Activity"
 
 const ActivityR: React.FC = () => {
   return (
     <IonPage>
+      <IonContent fullscreen>
       <header className="header">
         <div className="header-left">
             <button className="back-button"><img
@@ -30,6 +31,7 @@ const ActivityR: React.FC = () => {
         Ver Mais
     </button>
     <div></div>
+    </IonContent>
     </IonPage>
   );
 };
