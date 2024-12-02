@@ -3,9 +3,11 @@ import './ActivityHistory.css';
 interface ContainerProps {
   name: string;
   date: string;
+  color: string;
+  status: string
 }
 
-const ActivityHistory: React.FC<ContainerProps> = ({ name, date }) => {
+const ActivityHistory: React.FC<ContainerProps> = ({ name, date, color,status }) => {
   return (
     <li className="activity-item">
     <div className="activity-info">
@@ -15,7 +17,7 @@ const ActivityHistory: React.FC<ContainerProps> = ({ name, date }) => {
             <span className="activity-date">{date}</span>
         </div>
     </div>
-    <span className="activity-status status-progress">Em andamento</span>
+    <span className={"activity-status "+ color}>{status}</span>
 </li>
   );
 };

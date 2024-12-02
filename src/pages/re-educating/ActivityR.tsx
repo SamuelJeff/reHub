@@ -1,6 +1,6 @@
 import { IonContent, IonPage } from "@ionic/react";
 import "./ActivityR.css";
-import Activity from "../components/Activity";
+import Activity from "../../components/Activity";
 import { useHistory } from "react-router-dom";
 
 const ActivityR: React.FC = () => {

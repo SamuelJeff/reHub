@@ -7,11 +7,11 @@ const Start: React.FC = () => {
 
   // Funções para redirecionar
   const handleInstituicaoClick = () => {
-    history.push('/instituicao'); // Substitua '/ong' pelo caminho da sua próxima tela
+    history.push('/loginI'); // Substitua '/ong' pelo caminho da sua próxima tela
   };
 
   const handleReeducandoClick = () => {
-    history.push('/LoginR'); // Substitua '/reeducando' pelo caminho da sua próxima tela
+    history.push('/loginR'); // Substitua '/reeducando' pelo caminho da sua próxima tela
   };
 
   return (

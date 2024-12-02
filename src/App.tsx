@@ -11,11 +11,13 @@ import {
 } from "@ionic/react";
 import { IonReactRouter } from "@ionic/react-router";
 import Start from "./pages/Start";
-import LoginR from "./pages/LoginR";
-import HomeR from "./pages/HomeR";
-import ActivityR from "./pages/ActivityR";
-import DetailAct from "./pages/DetailAct";
-import HistoryR from "./pages/HistoryR";
+import LoginR from "./pages/re-educating/LoginR";
+import HomeR from "./pages/re-educating/HomeR";
+import ActivityR from "./pages/re-educating/ActivityR";
+import DetailAct from "./pages/re-educating/DetailAct";
+import HistoryR from "./pages/re-educating/HistoryR";
+import LoginI from "./pages/institution/LoginI"
+import HomeI from "./pages/institution/HomeI";
 
 /* Core CSS required for Ionic components to work properly */
 import "@ionic/react/css/core.css";
@@ -73,6 +75,12 @@ const App: React.FC = () => (
         </Route>
         <Route exact path="/historyR">
         <HistoryR />
+        </Route>
+        <Route exact path="/loginI">
+        <LoginI/>
+        </Route>
+        <Route exact path="/homeI">
+        <HomeI/>
         </Route>
       </IonRouterOutlet>
     </IonReactRouter>

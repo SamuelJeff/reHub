@@ -1,11 +1,7 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
-import {
-  IonContent,
-  IonPage
-} from "@ionic/react";
+import { IonContent, IonPage } from "@ionic/react";
 import "./LoginR.css";
-
 
 const LoginR: React.FC = () => {
   const [email, setEmail] = useState("");
@@ -23,7 +19,7 @@ const LoginR: React.FC = () => {
       const response = await fakeBackendLogin(email, password); // Chamada ao backend
       if (response.success) {
         // Redireciona para a próxima página se o login for bem-sucedido
-        history.push('/homeR'); // Substitua '/HomeR' pelo caminho da sua próxima tela
+        history.push("/homeR"); // Substitua '/HomeR' pelo caminho da sua próxima tela
       } else {
         alert("Login falhou: " + response.message);
       }
@@ -46,6 +42,10 @@ const LoginR: React.FC = () => {
       }, 2000); // Simula um atraso de 2 segundos
     });
   };
+  const handleBackStart = () => {
+    history.push("/start");
+  };
+
   return (
     <IonPage>
       <IonContent fullscreen>
@@ -56,10 +56,22 @@ const LoginR: React.FC = () => {
           <div className="circle circle-3-bottom"></div>
           <div className="circle circle-4-bottom-small"></div>
           <div className="circle circle-5-bottom-medium"></div>
+          <button className="back-buttonL">
+            <img
+              src="../public/angle-left.svg"
+              alt="Logo Icon"
+              className="back"
+              onClick={handleBackStart}
+            />
+          </button>
 
           <div className="containerL">
-          <div className="logo-container">
-              <img src="../public/minden.svg" alt="Logo Icon" className="logoMinden" />
+            <div className="logo-container">
+              <img
+                src="../public/minden.svg"
+                alt="Logo Icon"
+                className="logoMinden"
+              />
             </div>
             <h2>Login</h2>
             <form
@@ -93,7 +105,7 @@ const LoginR: React.FC = () => {
                 Login
               </button>
             </form>
-              <p className="textBlue">Esqueci minha senha</p>
+            <p className="textBlue">Esqueci minha senha</p>
           </div>
         </div>
       </IonContent>
