@@ -70,7 +70,7 @@ const HomeR: React.FC = () => {
 
         <div className="next-session">
           <div className="session-header">
-            <span>Próxima Sessão Agendada</span>
+            <span className="testeBack">Próxima Sessão Agendada</span>
             <button className="details-button" onClick={handleDetailsClick}>Detalhes</button>
           </div>
 

@@ -1,4 +1,6 @@
-
+.containerHI{
+    padding: 12px;
+}
 
 .header {
     display: flex;
@@ -41,7 +43,7 @@
 
 .menu-button {
     background-color: white;
-    padding: 15px 25px;
+    padding: 0px 0px 15px;
     border-radius: 15px;
     margin-bottom: 20px;
     display: flex;
