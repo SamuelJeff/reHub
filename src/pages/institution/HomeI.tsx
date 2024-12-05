@@ -24,14 +24,14 @@ const HomeI: React.FC = () => {
                     <header className="headerHI">
                         <button className="exitButton" onClick={handleExitClick}>
                             <img
-                                src="/exit-alt.svg"
+                                src="/src/assets//exit-alt.svg"
                                 alt="Logo Icon"
                                 className="logoExit"
                             />Sair
                         </button>
                         <div className="logo-container">
                             <img
-                                src="/minden.svg"
+                                src="/src/assets//minden.svg"
                                 alt="Logo Icon"
                                 className="logoMindenHI"
                             />
@@ -44,7 +44,7 @@ const HomeI: React.FC = () => {
                     <div className="menu-button">
                         <div className="icon-placeholder">
                             <img
-                                src="/relatorio.svg"
+                                src="/src/assets//relatorio.svg"
                                 alt="Logo Icon"
                                 className="logo"
                             /></div>
@@ -55,7 +55,7 @@ const HomeI: React.FC = () => {
                         <h2 className="section-title">
                             <span className="icon-placeholder">
                                 <img
-                                    src="/perfil.svg"
+                                    src="/src/assets/perfil.svg"
                                     alt="Logo Icon"
                                     className="logo"
                                 />
@@ -134,7 +134,7 @@ const HomeI: React.FC = () => {
                         <h2 className="section-title">
                             <span className="icon-placeholder">
                                 <img
-                                    src="/historia.svg"
+                                    src="/src/assets/historia.svg"
                                     alt="Logo Icon"
                                     className="logo"
                                 />

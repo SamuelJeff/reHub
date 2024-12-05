@@ -9,40 +9,17 @@ const LoginI: React.FC = () => {
     const [password, setPassword] = useState("");
     const history = useHistory();
   
-    const handleLoginI = async () => {
-      // Aqui você implementaria a lógica de login,
-      // como enviar os dados para um servidor.
-      console.log("E-mail:", email);
-      console.log("Senha:", password);
-  
+    
       // Simulando uma chamada ao backend
-      try {
-        const response = await fakeBackendLogin(email, password); // Chamada ao backend
-        if (response.success) {
-          // Redireciona para a próxima página se o login for bem-sucedido
+      
+          const handleLoginHome = ()=>{
+
+          
           history.push("/homeI"); // Substitua '/HomeR' pelo caminho da sua próxima tela
-        } else {
-          alert("Login falhou: " + response.message);
-        }
-      } catch (error) {
-        console.error("Erro ao fazer login:", error);
-        alert("Erro ao fazer login. Tente novamente.");
-      }
-    };
+}
   
     // Função simulada para o backend
-    const fakeBackendLogin = (email: string, password: string) => {
-      return new Promise<{ success: boolean; message?: string }>((resolve) => {
-        setTimeout(() => {
-          // Simulando um login bem-sucedido
-          if (email === "teste@123" && password === "123") {
-            resolve({ success: true });
-          } else {
-            resolve({ success: false, message: "Credenciais inválidas." });
-          }
-        }, 2000); // Simula um atraso de 2 segundos
-      });
-    };
+    
     const handleBackStart = () => {
       history.push("/start");
     };
@@ -58,7 +35,7 @@ const LoginI: React.FC = () => {
 
           <button className="back-buttonL">
             <img
-              src="../../assets/angle-left.svg"
+              src="/src/assets/angle-left.svg"
               alt="Logo Icon"
               className="back"
               onClick={handleBackStart}
@@ -66,7 +43,7 @@ const LoginI: React.FC = () => {
           </button>
           <div className="logo-container">
               <img
-                src="../../assets/minden.svg"
+                src="/src/assets/minden.svg"
                 alt="Logo Icon"
                 className="logoMinden"
               />
@@ -76,7 +53,7 @@ const LoginI: React.FC = () => {
               className="test"
               onSubmit={(e) => {
                 e.preventDefault();
-                handleLoginI();
+                handleLoginHome();
               }}
             >
               <div className="inptGroup">
