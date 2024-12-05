@@ -134,7 +134,7 @@ const HomeI: React.FC = () => {
                         <h2 className="section-title">
                             <span className="icon-placeholder">
                                 <img
-                                    src="/src/assets/historia.svg"
+                                    src="/historia.svg"
                                     alt="Logo Icon"
                                     className="logo"
                                 />

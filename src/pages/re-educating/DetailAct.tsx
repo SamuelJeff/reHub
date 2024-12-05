@@ -14,7 +14,7 @@ const DetailAct: React.FC = () => {
           <div className="containerDet">
         <div className="headerD">
             <div className="back-button-placeholder"><button className="back-button" onClick={handleBackHomeR}><img
-              src="/src/assets/angle-left.svg"
+              src="/angle-left.svg"
               alt="Logo Icon"
               className="back"
             /></button></div>

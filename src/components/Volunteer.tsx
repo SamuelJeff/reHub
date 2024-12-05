@@ -23,12 +23,12 @@ const Volunteer: React.FC<ContainerProps> = ({ name, idade, onAccept }) => {
     <div className="volunteer-age">{idade} anos</div>
     <div className="action-buttons">
         <div className="action-button-accept" onClick={handleAccept}><img
-            src="/src/assets/check.svg"
+            src="/check.svg"
             alt="Logo Icon"
             className="logoCheck"
           /></div>
         <div className="action-button-reject"><img
-            src="/src/assets/reject.svg"
+            src="/reject.svg"
             alt="Logo Icon"
             className="logoCheck"
           /></div>

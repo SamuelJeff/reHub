@@ -42,7 +42,7 @@ const CactivityI: React.FC = () => {
                     <div className="header">
                     <button className="back-button" onClick={handleBackHomeI}>
                 <img
-                  src="/src/assets//angle-left.svg"
+                  src="/angle-left.svg"
                   alt="Logo Icon"
                   className="back"
                 />

@@ -17,7 +17,7 @@ const HistoryR: React.FC = () => {
       
             <button className="back-button" onClick={handleBackHomeR}>
               <img
-                src="/src/assets/angle-left.svg"
+                src="/angle-left.svg"
                 alt="Logo Icon"
                 className="back"
               />

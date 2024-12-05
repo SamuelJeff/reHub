@@ -26,7 +26,7 @@ const Start: React.FC = () => {
           {/* Conteúdo principal */}
           <div className="containerS">
             <div className="logo-container">
-              <img src="/src/assets/minden.svg" alt="Logo Icon" className="logoMinden" />
+              <img src="/minden.svg" alt="Logo Icon" className="logoMinden" />
             </div>
             <div className="buttons">
             <button className="custom-button" onClick={handleInstituicaoClick}>

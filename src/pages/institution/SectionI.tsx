@@ -24,7 +24,7 @@ const SectionI: React.FC = () => {
     <header className="header">
         <div className="back-buttonSI">
         <img
-              src="/src/assets/angle-left.svg"
+              src="/angle-left.svg"
               alt="Logo Icon"
               className="back"
               onClick={handleBackHomeI}
@@ -43,7 +43,7 @@ const SectionI: React.FC = () => {
     <div className="group-info">
         <h2 className="group-title">Aqui é onde vai ficar o nome da instituicao</h2>
         <div className="settings-icon"><img
-              src="/src/assets/engrenagem.svg"
+              src="/engrenagem.svg"
               alt="Logo Icon"
               className="settings"
             /></div>
@@ -51,7 +51,7 @@ const SectionI: React.FC = () => {
         <p className="description">Esta seção é destinada à descrição da instituição, apresentando suas principais características, objetivos e atividades realizadas. Aqui, você encontrará informações detalhadas que ajudam a compreender a essência e o propósito da organização.</p>
         <div className="duration">
             <div className="duration-icon"><img
-                src="/src/assets/calendar-clock.svg"
+                src="/calendar-clock.svg"
                 alt="Logo Icon"
                 className="logoD"
               /></div>

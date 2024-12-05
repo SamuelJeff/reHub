@@ -57,7 +57,7 @@ const HomeR: React.FC = () => {
           <div className="icon-item" onClick={handleHistoryClick}>
             <div className="icon-placeholder">
               <img
-                src="/src/assets/time-past.svg"
+                src="/time-past.svg"
                 alt="Logo Icon"
                 className="logo"
               />
