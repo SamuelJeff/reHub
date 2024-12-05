@@ -12,7 +12,7 @@ const ActivityHistory: React.FC<ContainerProps> = ({ name, date, color,status })
     <li className="activity-item">
     <div className="activity-info">
         <div className="calendar-icon-placeholder"><img
-                src="../public/calendar-clock.svg"
+                src="/calendar-clock.svg"
                 alt="Logo Icon"
                 className="logoD"
               /></div>

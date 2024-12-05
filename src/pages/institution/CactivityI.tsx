@@ -31,12 +31,22 @@ const CactivityI: React.FC = () => {
         // Redirecionar ou fazer outra ação
         history.push('/homeI'); // Exemplo de redirecionamento
     };
+    const handleBackHomeI = () =>{
+        history.push('/homeI');
+    }
 
     return (
         <IonPage>
             <IonContent fullscreen>
                 <div className='containerCA'>
                     <div className="header">
+                    <button className="back-button" onClick={handleBackHomeI}>
+                <img
+                  src="/angle-left.svg"
+                  alt="Logo Icon"
+                  className="back"
+                />
+              </button>
                         <h1 className="title">Crie sua atividade</h1>
                     </div>
 

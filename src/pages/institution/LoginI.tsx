@@ -57,7 +57,7 @@ const LoginI: React.FC = () => {
 
           <button className="back-buttonL">
             <img
-              src="../public/angle-left.svg"
+              src="/angle-left.svg"
               alt="Logo Icon"
               className="back"
               onClick={handleBackStart}
@@ -65,7 +65,7 @@ const LoginI: React.FC = () => {
           </button>
           <div className="logo-container">
               <img
-                src="../public/minden.svg"
+                src="/minden.svg"
                 alt="Logo Icon"
                 className="logoMinden"
               />

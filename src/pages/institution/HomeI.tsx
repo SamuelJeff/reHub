@@ -24,14 +24,14 @@ const HomeI: React.FC = () => {
                     <header className="headerHI">
                         <button className="exitButton" onClick={handleExitClick}>
                             <img
-                                src="../public/exit-alt.svg"
+                                src="/exit-alt.svg"
                                 alt="Logo Icon"
                                 className="logoExit"
                             />Sair
                         </button>
                         <div className="logo-container">
                             <img
-                                src="../../../public/minden.svg"
+                                src="/minden.svg"
                                 alt="Logo Icon"
                                 className="logoMindenHI"
                             />
@@ -44,7 +44,7 @@ const HomeI: React.FC = () => {
                     <div className="menu-button">
                         <div className="icon-placeholder">
                             <img
-                                src="../../../public/relatorio.svg"
+                                src="/relatorio.svg"
                                 alt="Logo Icon"
                                 className="logo"
                             /></div>
@@ -55,7 +55,7 @@ const HomeI: React.FC = () => {
                         <h2 className="section-title">
                             <span className="icon-placeholder">
                                 <img
-                                    src="../../../public/perfil.svg"
+                                    src="/perfil.svg"
                                     alt="Logo Icon"
                                     className="logo"
                                 />
@@ -134,7 +134,7 @@ const HomeI: React.FC = () => {
                         <h2 className="section-title">
                             <span className="icon-placeholder">
                                 <img
-                                    src="../../../public/historia.svg"
+                                    src="/historia.svg"
                                     alt="Logo Icon"
                                     className="logo"
                                 />

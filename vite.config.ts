@@ -1,26 +1,19 @@
 /// <reference types="vitest" />
 
-import legacy from '@vitejs/plugin-legacy'
-import react from '@vitejs/plugin-react'
-import { defineConfig } from 'vite'
+import legacy from '@vitejs/plugin-legacy';
+import react from '@vitejs/plugin-react';
+import { defineConfig } from 'vite';
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
     react(),
-    legacy()
+    legacy(),
   ],
+  base: '/', // Define o caminho base; altere se necessário, dependendo do subdomínio na Vercel.
   test: {
     globals: true,
     environment: 'jsdom',
     setupFiles: './src/setupTests.ts',
   },
-  define: {
-    'process.env': {},
-},
-resolve: {
-    alias: {
-        path: 'path-browserify',
-    },
-},
-})
+});
