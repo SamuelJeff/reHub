@@ -14,7 +14,7 @@ const DetailAct: React.FC = () => {
           <div className="containerDet">
         <div className="headerD">
             <div className="back-button-placeholder"><button className="back-button" onClick={handleBackHomeR}><img
-              src="../public/angle-left.svg"
+              src="/src/assets/angle-left.svg"
               alt="Logo Icon"
               className="back"
             /></button></div>
@@ -34,7 +34,7 @@ const DetailAct: React.FC = () => {
 
             <div className="duration">
                 <div className="duration-icon-placeholder"><img
-                src="../public/calendar-clock.svg"
+                src="/src/assets/calendar-clock.svg"
                 alt="Logo Icon"
                 className="logoD"
               /></div>

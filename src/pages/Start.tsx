@@ -1,4 +1,4 @@
-import { IonButton, IonContent, IonPage, IonHeader, IonTitle, IonToolbar } from '@ionic/react';
+import { IonButton, IonContent, IonPage } from '@ionic/react';
 import { useHistory } from 'react-router-dom'; // Importando useHistory
 import './Start.css';
 
@@ -26,7 +26,7 @@ const Start: React.FC = () => {
           {/* Conteúdo principal */}
           <div className="containerS">
             <div className="logo-container">
-              <img src="../public/minden.svg" alt="Logo Icon" className="logoMinden" />
+              <img src="/src/assets/minden.svg" alt="Logo Icon" className="logoMinden" />
             </div>
             <div className="buttons">
             <button className="custom-button" onClick={handleInstituicaoClick}>

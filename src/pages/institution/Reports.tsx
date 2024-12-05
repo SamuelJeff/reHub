@@ -16,7 +16,7 @@ const Reports: React.FC = () => {
             <div className="header-left">
               <button className="back-button" onClick={handleBackHomeI}>
                 <img
-                  src="/angle-left.svg"
+                  src="/src/assets/angle-left.svg"
                   alt="Logo Icon"
                   className="back"
                 />

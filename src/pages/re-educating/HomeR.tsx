@@ -27,13 +27,13 @@ const HomeR: React.FC = () => {
       <div className="containerR">
         <div className="headerR">
           <button className="exitButton" onClick={handleExitClick}><img
-              src="../public/exit-alt.svg"
+              src="/src/assets/exit-alt.svg"
               alt="Logo Icon"
               className="logoExit"
             />Sair</button>
           <div className="logo-containerR">
             <img
-              src="../public/minden.svg"
+              src="/src/assets/minden.svg"
               alt="Logo Icon"
               className="logoMinden"
             />
@@ -45,7 +45,7 @@ const HomeR: React.FC = () => {
           <div className="icon-item" onClick={handleActivityClick}>
             <div className="icon-placeholder">
               <img
-                src="../public/calendar-clock.svg"
+                src="/src/assets/calendar-clock.svg"
                 alt="Logo Icon"
                 className="logo"
               />
@@ -57,7 +57,7 @@ const HomeR: React.FC = () => {
           <div className="icon-item" onClick={handleHistoryClick}>
             <div className="icon-placeholder">
               <img
-                src="../public/time-past.svg"
+                src="/src/assets/time-past.svg"
                 alt="Logo Icon"
                 className="logo"
               />
