@@ -3,6 +3,7 @@ import "./LoginI.css";
 import { useHistory } from "react-router-dom";
 import { useState } from "react";
 
+
 const LoginI: React.FC = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -57,7 +58,7 @@ const LoginI: React.FC = () => {
 
           <button className="back-buttonL">
             <img
-              src="/angle-left.svg"
+              src="../../assets/angle-left.svg"
               alt="Logo Icon"
               className="back"
               onClick={handleBackStart}
@@ -65,7 +66,7 @@ const LoginI: React.FC = () => {
           </button>
           <div className="logo-container">
               <img
-                src="/minden.svg"
+                src="../../assets/minden.svg"
                 alt="Logo Icon"
                 className="logoMinden"
               />
