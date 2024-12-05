@@ -1,12 +1,19 @@
 import { IonContent, IonPage } from "@ionic/react";
-import "./HomeI.css"; // Certifique-se de que a nova classe CSS esteja incluída aqui
+import "./HomeI.css"; 
 import { useHistory } from "react-router-dom";
 
 const HomeI: React.FC = () => {
     const history = useHistory();
     const handleExitClick = () => {
-        history.push('/loginI'); // Substitua '/exit' pelo caminho da sua próxima tela
+        history.push('/loginI');
     };
+    const handleSectionI = () => {
+        history.push('/sectionI');
+    };
+
+    const handleActivityCreate = () => {
+        history.push('/cActivityI');
+    }
 
     return (
         <IonPage>
@@ -78,7 +85,7 @@ const HomeI: React.FC = () => {
                         </h2>
                         <div className="cards-scroll">
                             <div className="cards-container">
-                                <div className="card"> {/* Classe card aplicada */}
+                                <div className="card" onClick={handleSectionI}> {/* Classe card aplicada */}
                                     <div className="activity-image"></div>
                                     <div className="cardInfo">
                                     <span className="status-badge em-andamento">Em aberto</span>
@@ -91,7 +98,7 @@ const HomeI: React.FC = () => {
                             </div>
                     </section>
 
-    <button className="add-activity-btn">+</button>
+    <button className="add-activity-btn" onClick={handleActivityCreate}>+</button>
         </div>
       </IonContent>
     </IonPage>

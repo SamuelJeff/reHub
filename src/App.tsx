@@ -19,6 +19,7 @@ import HistoryR from "./pages/re-educating/HistoryR";
 import LoginI from "./pages/institution/LoginI"
 import HomeI from "./pages/institution/HomeI";
 import SectionI from "./pages/institution/SectionI";
+import CactivityI from "./pages/institution/CactivityI";
 
 /* Core CSS required for Ionic components to work properly */
 import "@ionic/react/css/core.css";
@@ -85,6 +86,9 @@ const App: React.FC = () => (
         </Route>
         <Route exact path="/sectionI">
         <SectionI/>
+        </Route>
+        <Route exact path="/cActivityI">
+        <CactivityI/>
         </Route>
       </IonRouterOutlet>
     </IonReactRouter>

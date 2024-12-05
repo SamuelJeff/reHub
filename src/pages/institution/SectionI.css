@@ -26,11 +26,10 @@ body {
     border-bottom: 1px solid #eee;
 }
 
-.back-button {
+.back-buttonSI {
     width: 24px;
     height: 24px;
     margin-right: 15px;
-    background-color: #ddd;
 }
 
 .session-info {
@@ -48,6 +47,11 @@ body {
     padding: 24px;
     color: white;
     text-align: center;
+    height: 250px;
+}
+
+.settings{
+    mix-blend-mode: multiply;
 }
 
 .logo-text {
@@ -80,7 +84,7 @@ body {
     top: 0;
     width: 24px;
     height: 24px;
-    background-color: #ddd;
+    display: flex;
     border-radius: 4px;
 }
 
@@ -95,6 +99,7 @@ body {
     font-size: 14px;
     line-height: 1.5;
     margin-bottom: 20px;
+    text-align: justify;
 }
 
 .duration {
@@ -118,32 +123,4 @@ body {
     font-size: 18px;
     color: #333;
     font-weight: bold;
-}
-
-.volunteer-card {
-    margin: 8px 16px;
-    padding: 16px;
-    background-color: #f8f8f8;
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-}
-
-.volunteer-image {
-    width: 48px;
-    height: 48px;
-    border-radius: 24px;
-    background-color: #ddd;
-    margin-right: 16px;
-}
-
-.volunteer-info {
-    flex: 1;
-}
-
-.volunteer-name {
-    font-weight: 600;
-    color: #333;
-    font-size: 16px;
-    margin-bottom: 4px;
 }
