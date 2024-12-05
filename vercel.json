@@ -22,9 +22,5 @@
         ]
       }
     }
-  ],
-  "routes": [
-    { "src": "/(.*)", "dest": "/" },
-    { "src": "/(.*\\.(svg|png|jpg|jpeg|gif|ico|webp))", "dest": "/public/$1" }
   ]
 }
