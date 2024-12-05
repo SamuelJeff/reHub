@@ -14,7 +14,7 @@ const ActivityR: React.FC = () => {
   }
   return (
     <IonPage>
-      <IonContent fullscreen color={"light"}>
+      <IonContent fullscreen >
         <div className="containerA">
         <div className="header">
           <div className="header-left">

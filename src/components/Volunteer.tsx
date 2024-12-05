@@ -1,11 +1,19 @@
 import './Volunteer.css';
+import { useApprovedReeducandos } from '../pages/institution/ApprovedReeducandosContext'; 
 
 interface ContainerProps {
   name: string;
   idade: string;
+  onAccept: () => void;
 }
 
-const Volunteer: React.FC<ContainerProps> = ({ name, idade}) => {
+const Volunteer: React.FC<ContainerProps> = ({ name, idade, onAccept }) => {
+  const { addReeducando } = useApprovedReeducandos(); 
+
+  const handleAccept = () => {
+    addReeducando({ name, idade });
+    onAccept(); // Chama a função passada como prop
+  };
   return (
     <div className="volunteer-card">
     <div className="volunteer-image"></div>
@@ -14,7 +22,7 @@ const Volunteer: React.FC<ContainerProps> = ({ name, idade}) => {
     </div>
     <div className="volunteer-age">{idade} anos</div>
     <div className="action-buttons">
-        <div className="action-button-accept"><img
+        <div className="action-button-accept" onClick={handleAccept}><img
             src="../public/check.svg"
             alt="Logo Icon"
             className="logoCheck"

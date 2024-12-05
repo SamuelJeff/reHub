@@ -1,6 +1,7 @@
 import { IonContent, IonPage } from "@ionic/react";
 import "./HomeI.css"; 
 import { useHistory } from "react-router-dom";
+import { useActivity } from './ActivityContext';
 
 const HomeI: React.FC = () => {
     const history = useHistory();
@@ -14,6 +15,7 @@ const HomeI: React.FC = () => {
     const handleActivityCreate = () => {
         history.push('/cActivityI');
     }
+    const { activities } = useActivity();
 
     return (
         <IonPage>
@@ -70,6 +72,62 @@ const HomeI: React.FC = () => {
                                         <p>Oficinas de conscientização</p>
                                     </div>
                                 </div>
+                                <div className="card"> {/* Classe card aplicada */}
+                                    <div className="person-image"></div>
+                                    <div className="cardInfo">
+                                        <span className="status-badge em-andamento">Em andamento</span>
+                                        <h3>Lucas Jose</h3>
+                                        <p>Assistencia social</p>
+                                    </div>
+                                </div>
+                                <div className="card"> {/* Classe card aplicada */}
+                                    <div className="person-image"></div>
+                                    <div className="cardInfo">
+                                        <span className="status-badge em-andamento">Em andamento</span>
+                                        <h3>Thiago Almeida</h3>
+                                        <p>Psicologo</p>
+                                    </div>
+                                </div>
+                                <div className="card"> {/* Classe card aplicada */}
+                                    <div className="person-image"></div>
+                                    <div className="cardInfo">
+                                        <span className="status-badge em-andamento">Em andamento</span>
+                                        <h3>Caio Martins</h3>
+                                        <p>Meditacao</p>
+                                    </div>
+                                </div>
+                                <div className="card"> {/* Classe card aplicada */}
+                                    <div className="person-image"></div>
+                                    <div className="cardInfo">
+                                        <span className="status-badge em-andamento">Em andamento</span>
+                                        <h3>Ricardo Silva</h3>
+                                        <p>Psicanalise</p>
+                                    </div>
+                                </div>
+                                <div className="card"> {/* Classe card aplicada */}
+                                    <div className="person-image"></div>
+                                    <div className="cardInfo">
+                                        <span className="status-badge em-andamento">Em andamento</span>
+                                        <h3>Alexandro Oliveira</h3>
+                                        <p>Reabilitacao</p>
+                                    </div>
+                                </div>
+                                <div className="card"> {/* Classe card aplicada */}
+                                    <div className="person-image"></div>
+                                    <div className="cardInfo">
+                                        <span className="status-badge em-andamento">Em andamento</span>
+                                        <h3>Enrique Joaquim</h3>
+                                        <p>Psiquiatra</p>
+                                    </div>
+                                </div>
+                                <div className="card"> {/* Classe card aplicada */}
+                                    <div className="person-image"></div>
+                                    <div className="cardInfo">
+                                        <span className="status-badge em-andamento">Em andamento</span>
+                                        <h3>Rafael Miguel</h3>
+                                        <p>Oficinas de conscientização</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     
@@ -84,18 +142,23 @@ const HomeI: React.FC = () => {
                             Sessões e Atividades
                         </h2>
                         <div className="cards-scroll">
-                            <div className="cards-container">
-                                <div className="card" onClick={handleSectionI}> {/* Classe card aplicada */}
-                                    <div className="activity-image"></div>
-                                    <div className="cardInfo">
-                                    <span className="status-badge em-andamento">Em aberto</span>
-                                    <h3>Grupo de apoio e r...</h3>
-                                    <p className="vagas-info">2 vagas disponíveis</p>
+                        <div className="cards-container">
+                            {activities.length > 0 ? (
+                                activities.map((activity, index) => (
+                                    <div key={index} className="card" onClick={() => handleSectionI()}> {/* Adicione a lógica de redirecionamento aqui */}
+                                        <div className="activity-image"></div>
+                                        <div className="cardInfo">
+                                            <span className="status-badge em-andamento">Em aberto</span>
+                                            <h3>{activity.title}</h3>
+                                             {/* Você pode modificar isso conforme necessário */}
+                                        </div>
                                     </div>
-                                </div>
-                                
-                                </div>
-                            </div>
+                                ))
+                            ) : (
+                                <p>Nenhuma atividade criada ainda.</p>
+                            )}
+                        </div>
+                    </div>
                     </section>
 
     <button className="add-activity-btn" onClick={handleActivityCreate}>+</button>
