@@ -1,4 +1,4 @@
-.activity-item {
+.activity-itemR {
   display: flex;
   gap: 16px;
   align-items: center;
@@ -8,7 +8,7 @@
   box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
 
-.activity-image {
+.activity-imageR {
   width: 60px;
   height: 60px;
   background-color: #ddd;
@@ -16,7 +16,7 @@
   flex-shrink: 0;
 }
 
-.activity-info {
+.activity-infoR {
   flex-grow: 1;
 }
 

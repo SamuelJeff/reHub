@@ -1,11 +1,10 @@
 .containerHI{
     padding: 12px;
+    width: 100%;
 }
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.headerHI {
+    width: 100%;
     margin-bottom: 20px;
 }
 
@@ -34,21 +33,33 @@
 }
 
 .profile-btn {
-    background-color: white;
-    padding: 8px 16px;
+    padding: 8px 16px 24px;
     border-radius: 20px;
-    text-decoration: none;
+    margin-bottom: 20px;
     color: black;
+    width: 40%;
+    height: 10px;
+    border-radius: 15px;
+    background-color: #83FFBA;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .menu-button {
     background-color: white;
-    padding: 0px 0px 15px;
+    width: 35%;
+    height: 35px;
+    padding-left: 12px;
     border-radius: 15px;
     margin-bottom: 20px;
     display: flex;
     align-items: center;
     gap: 10px;
+    border: 1px solid #838383;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.logoMindenHI{
+    padding-top: 12px;
 }
 
 .section-title {
@@ -62,10 +73,71 @@
 .icon-placeholder {
     width: 24px;
     height: 24px;
-    background-color: #ddd;
+    mix-blend-mode: multiply;
     border-radius: 50%;
 }
 
+
+
+.status-badge {
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.em-andamento {
+    background-color: #fff176;
+}
+
+.nao-iniciado {
+    background-color: #e0e0e0;
+}
+
+.finalizado {
+    background-color: #90EE90;
+}
+
+
+
+
+
+.add-activity-btn {
+    width: 60px;
+    height: 60px;
+    background-color: #83FFBA;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin: 20px auto;
+    cursor: pointer;
+    border: none;
+    color: black;
+}
+
+.vagas-info {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+    mix-blend-mode: multiply;
+}
+
+.card {
+    width: 250px; /* Largura do card */
+    background: white; /* Cor de fundo */
+    border-radius: 10px; /* Bordas arredondadas */
+    overflow: hidden; /* Para evitar que o conteúdo transborde */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; /* Sombra */
+    display: inline-block; /* Para permitir que os cards fiquem lado a lado */
+    width: 250px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    display: inline-block;
+}
 .cards-scroll {
     overflow-x: auto;
     white-space: nowrap;
@@ -98,7 +170,7 @@
     background-color: #ddd;
 }
 
-.person-info {
+.cardInfo {
     padding: 15px;
 }
 
@@ -106,78 +178,31 @@
     margin: 5px 0;
 }
 
-.status-badge {
-    display: inline-block;
-    padding: 5px 15px;
-    border-radius: 15px;
-    font-size: 14px;
-    margin-bottom: 10px;
-}
-
-.em-andamento {
-    background-color: #fff176;
-}
-
-.nao-iniciado {
-    background-color: #e0e0e0;
-}
-
-.finalizado {
-    background-color: #90EE90;
-}
-
-.activity-card {
-    width: 250px;
-    background: #4a0d4a;
-    border-radius: 10px;
-    padding: 15px;
-    color: white;
-    display: inline-block;
-    position: relative;
-}
-
 .activity-card h3 {
-    margin: 10px 0;
+    width: 250px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    display: inline-block;
 }
 
-.status-counter {
-    background-color: #ff5252;
-    border-radius: 50%;
-    width: 24px;
-    height: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    right: -8px;
-    top: -8px;
+.activity-info{
+    padding: 15px;
+}
+
+.activity-info h3{
+    margin: 5px 0;
 }
 
 .activity-image {
     width: 100%;
-    height: 150px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 5px;
-    margin: 10px 0;
+    height: 200px;
+    background-color: #ddd;
 }
-
-.add-activity-btn {
-    width: 60px;
-    height: 60px;
-    background-color: #90EE90;
+.activity-card {
+    width: 250px;
+    background: white;
     border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-    margin: 20px auto;
-    cursor: pointer;
-    border: none;
-    color: black;
-}
-
-.vagas-info {
-    font-size: 14px;
-    color: #666;
-    margin-top: 10px;
+    overflow: hidden;
+    display: inline-block;
 }
