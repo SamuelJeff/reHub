@@ -167,18 +167,29 @@ h2 {
     margin-top: 8px;
   }
   .circle-3-bottom {
-    width: 400px;
-    height: 400px;
-    bottom: -170px;
+    width: 250px;
+    height: 250px;
+    bottom: -90px;
+    left: 20px
   }
   .circle-4-bottom-small {
-    width: 150px;
-    height: 150px;
+    width: 85px;
+    height: 85px;
     background-color: #83ffba;
-    bottom: 100px;
-    left: 280px;
+    bottom: 70px;
+    left: 210px;
     z-index: 0;
   }
+
+  .circle-5-bottom-medium {
+    width: 120px;
+    height: 120px;
+    background: #6ad8b3;
+    bottom: -27px;
+    left: -30px;
+    z-index: 2; /* Mantém no fundo */
+  }
+  
 }
 
 /* Media Queries para diferentes tamanhos de tela */

@@ -17,6 +17,10 @@ const HomeI: React.FC = () => {
     }
     const { activities } = useActivity();
 
+    const handlerReports = () =>{
+        history.push('/reportsI');
+    }
+
     return (
         <IonPage>
             <IonContent fullscreen>
@@ -42,7 +46,7 @@ const HomeI: React.FC = () => {
         
 
                     <div className="menu-button">
-                        <div className="icon-placeholder">
+                        <div className="icon-placeholder" onClick={handlerReports}>
                             <img
                                 src="/src/assets//relatorio.svg"
                                 alt="Logo Icon"
